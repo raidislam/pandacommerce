@@ -1,0 +1,12 @@
+.nav-search {
+    position: relative;
+}
+
+.nav-icon {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #ddd;
+}

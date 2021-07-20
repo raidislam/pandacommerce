@@ -5,24 +5,323 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c767534a8d.js" crossorigin="anonymous"></script>
+    <!-- css style  -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Panda Commerce 🐼</title>
 </head>
 
 <body>
+    <header class="bg-white">
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="logo" width="160px" height="40px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-around" id="navbar">
+                    <form class="d-flex w-50 nav-search">
+                        <input class="rounded-pill form-control me-2 p-3" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <span class="nav-icon"><i class="fas fa-search"></i></span>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 fs-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product">Prouct</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Slider -->
+        <section class="container">
+            <div id="control" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item bg-light active p-4 rounded-3">
+                        <div class="row">
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="col-md-7">
+                                    <h1 class="fw-bolder">Mi LED TV 4A PRO 32</h1>
+                                    <p class="fs-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                        sint. Velit
+                                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                                        nostrud
+                                        amet.</p>
+                                    <p class="fw-bold fs-3 text-danger">$1289</p>
+                                    <button class="my-3 btn btn-danger py-3 px-5">Buy Now &rarr;</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid  d-block w-100" src="images/banner-images/headphone.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-4 rounded-3" style="background-color: #FEEAE9;">
+                        <div class="row">
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="col-md-7 col-">
+                                    <h1 class="fw-bolder">Mi LED TV 4A PRO 32</h1>
+                                    <p class="fs-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                        sint. Velit
+                                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                                        nostrud
+                                        amet.</p>
+                                    <p class="fw-bold fs-3 text-danger">$1289</p>
+                                    <button class="my-3 btn btn-danger py-3 px-5">Buy Now &rarr;</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid d-block w-100" src="images/banner-images/tv.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-light p-4 rounded-3">
+                        <div class="row">
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="col-md-7 col-">
+                                    <h1 class="fw-bolder">Mi LED TV 4A PRO 32</h1>
+                                    <p class="fs-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                        sint. Velit
+                                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                                        nostrud
+                                        amet.</p>
+                                    <p class="fw-bold fs-3 text-danger">$1289</p>
+                                    <button class="my-3 btn btn-danger py-3 px-5">Buy Now &rarr;</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid  d-block w-100" src="images/banner-images/xbox.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#control" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#control" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- promotion-section -->
+        <section class="container py-5">
+            <h1 class="my-5 fw-bold">Categories</h1>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 rounded-3 bg-warning">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-light">Watch</h2>
+                            <img src="images/categories/watch.png" width="150" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 rounded-3 bg-danger">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-light">Shoes</h2>
+                            <img src="images/categories/shoes.png" width="150" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 rounded-3 bg-gradient bg-primary">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="text-light">Bags</h2>
+                            <img src="images/categories/bag.png" width="150" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shoes-section -->
+        <section class="shoes py-4" style="background-color: #F4F4F4;">
+            <div class="container">
+                <h1 class="my-4">Shoes</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 shadow-lg rounded-3 py-3">
+                            <img src="images/shoes/shoe-1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="text-md-center">
+                                    <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                                    <p class="card-text fs-4">Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do
+                                        amet
+                                        sint. </p>
+                                    <p class="fs-3 fw-bold">$1289</p>
+                                    <button class="btn btn-dark btn-lg">Buy Now &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 shadow-lg rounded-3 py-3">
+                            <img src="images/shoes/shoe-2.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="text-md-center">
+                                    <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                                    <p class="card-text fs-4">Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do
+                                        amet
+                                        sint. </p>
+                                    <p class="fs-3 fw-bold">$1289</p>
+                                    <button class="btn btn-dark btn-lg">Buy Now &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 shadow-lg rounded-3 py-3">
+                            <img src="images/shoes/shoe-3.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="text-md-center">
+                                    <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                                    <p class="card-text fs-4">Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do
+                                        amet
+                                        sint. </p>
+                                    <p class="fs-3 fw-bold">$1289</p>
+                                    <button class="btn btn-dark btn-lg">Buy Now &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bags section -->
+        <section class="shoes py-5" style="background-color: #F4F4F4;">
+            <div class="container">
+                <h1 class="my-4">Backpack</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 shadow-lg rounded-3 py-3">
+                            <img src="images/bags/bag-1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="text-md-center">
+                                    <h2 class="card-title">Ison Backpack</h2>
+                                    <p class="card-text fs-4">Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do
+                                        amet
+                                        sint. </p>
+                                    <p class="fs-3 fw-bold">$1289</p>
+                                    <button class="btn btn-dark btn-lg">Buy Now &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 shadow-lg rounded-3 py-3">
+                            <img src="images/bags/bag-2.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="text-md-center">
+                                    <h2 class="card-title">Biaowang Backpack</h2>
+                                    <p class="card-text fs-4">Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do
+                                        amet
+                                        sint. </p>
+                                    <p class="fs-3 fw-bold">$799</p>
+                                    <button class="btn btn-dark btn-lg">Buy Now &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 shadow-lg rounded-3 py-3">
+                            <img src="images/bags/bag-3.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="text-md-center">
+                                    <h2 class="card-title">Dxyizu WS54 Smart</h2>
+                                    <p class="card-text fs-4">Amet minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do
+                                        amet
+                                        sint. </p>
+                                    <p class="fs-3 fw-bold">$699</p>
+                                    <button class="btn btn-dark btn-lg">Buy Now &rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscription section -->
+        <section class="subscription bg-white p-md-5">
+            <div class="container p-md-5 rounded-3" style="background-color: #FFF2F1;">
+                <div class="row py-5 justify-content-center">
+                    <div class="col-6 py-md-5">
+                        <div class="text-center py-md-3">
+                            <h2 class="fw-bold fs-3">LET'S STAY IN TOUCH</h2>
+                            <p class="text-dark">Get updates on sales specials and more</p>
+                        </div>
+                        <form class="d-flex" method="get" action="">
+                            <input type="email" name="" class="form-control" id="" placeholder="Enter your email">
+                            <button type="submit" class="btn btn-danger fw-bold px-md-5 py-md-3 p-sm-4">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
 </body>
 
